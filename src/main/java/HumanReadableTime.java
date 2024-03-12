@@ -1,8 +1,8 @@
 public class HumanReadableTime {
 
     public static void main(String[] args) {
-        System.out.println(makeReadable(5));
-        System.out.println(makeReadable(600));
+        System.out.println(makeReadable1(5));
+        System.out.println(makeReadable1(600));
     }
 
     public static String makeReadable(int seconds) {
@@ -33,3 +33,5 @@ public class HumanReadableTime {
         return String.format("%02d:%02d:%02d", seconds / 3600, (seconds / 60) % 60, seconds % 60);
     }
 }
+
+//https://stackoverflow.com/questions/3377688/what-do-these-symbolic-strings-mean-02d-01d
